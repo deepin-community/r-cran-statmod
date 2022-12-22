@@ -1,0 +1,30 @@
+Source: r-cran-statmod
+Maintainer: Debian R Packages Maintainers <r-pkg-team@alioth-lists.debian.net>
+Uploaders: Sébastien Villemot <sebastien@debian.org>
+Section: gnu-r
+Testsuite: autopkgtest-pkg-r
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-r,
+               r-base-dev
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/r-pkg-team/r-cran-statmod
+Vcs-Git: https://salsa.debian.org/r-pkg-team/r-cran-statmod.git
+Homepage: https://cran.r-project.org/package=statmod
+Rules-Requires-Root: no
+
+Package: r-cran-statmod
+Architecture: any
+Depends: ${R:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Recommends: ${R:Recommends}
+Suggests: ${R:Suggests}
+Description: GNU R package providing algorithms and functions for statistical modeling
+ This R package provides a collection of algorithms and functions to aid
+ statistical modeling. Includes limiting dilution analysis (aka ELDA), growth
+ curve comparisons, mixed linear models, heteroscedastic regression,
+ inverse-Gaussian probability calculations, Gauss quadrature and a secure
+ convergence algorithm for nonlinear models. Also includes a number of advanced
+ generalized linear model functions including new Tweedie and Digamma glm
+ families and a secure convergence algorithm.

@@ -1,0 +1,5 @@
+Tests: generic
+Depends: @,
+Restrictions: allow-stderr
+
+
